@@ -15,7 +15,11 @@
 namespace ots {
 
 struct NameRecord {
-  NameRecord() {
+  NameRecord()
+    : platform_id(0),
+      encoding_id(0),
+      language_id(0),
+      name_id(0) {
   }
 
   NameRecord(uint16_t platformID, uint16_t encodingID,
